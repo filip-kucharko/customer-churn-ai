@@ -1,0 +1,17 @@
+{
+  "total_customers": 7043,
+  "churn_rate": 0.2653698707936959,
+  "avg_tenure": 32.37114865824223,
+  "avg_monthly_charges": 64.76169246059918,
+  "avg_total_charges": 2279.798991906858,
+  "contract_distribution": {
+    "Month-to-month": 3875,
+    "Two year": 1695,
+    "One year": 1473
+  },
+  "internet_service_distribution": {
+    "Fiber optic": 3096,
+    "DSL": 2421,
+    "No": 1526
+  }
+}
