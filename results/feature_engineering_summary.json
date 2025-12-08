@@ -1,0 +1,32 @@
+{
+  "total_features": 24,
+  "engineered_features": [
+    {
+      "name": "charges_per_service",
+      "type": "numerical",
+      "business_logic": "Monthly charges divided by number of services. Lower = better value perception.",
+      "validation": "Churners pay \u20ac10.35 more per service on average",
+      "impact": "High - clear separation between churners and retained"
+    },
+    {
+      "name": "is_month_to_month",
+      "type": "binary",
+      "business_logic": "1 if customer on month-to-month contract, 0 if locked in",
+      "validation": "Month-to-month customers have 15x higher churn rate",
+      "impact": "Very High - strongest predictor from EDA"
+    },
+    {
+      "name": "lifecycle_stage",
+      "type": "categorical (4 classes)",
+      "business_logic": "Customer maturity based on tenure: New/Growing/Mature/Loyal",
+      "validation": "New customers have 5x higher churn than Loyal",
+      "impact": "Medium-High - needed for GenAI strategy generation",
+      "note": "High correlation with tenure (0.961) - keeping for downstream use"
+    }
+  ],
+  "original_features_used": 21,
+  "train_samples": 5634,
+  "test_samples": 1409,
+  "churn_rate_train": "26.5%",
+  "churn_rate_test": "26.5%"
+}
