@@ -1,0 +1,29 @@
+{
+  "model_type": "Gradient Boosting",
+  "smote_used": false,
+  "threshold": 0.35,
+  "reasoning": "Best balance between Recall and Precision without synthetic data",
+  "performance": {
+    "recall": 0.695,
+    "precision": 0.551,
+    "f2_score": 0.661,
+    "roi": 634.46,
+    "accuracy": 0.781
+  },
+  "business_impact": {
+    "churners_caught": "69.5% of all churners identified",
+    "campaign_efficiency": "55% of contacted customers are actual churners",
+    "roi_multiplier": "6.34x return on investment"
+  },
+  "alternatives_considered": [
+    "SMOTE + Threshold 0.60: Same Recall/Precision but more complex",
+    "SMOTE + Threshold 0.30: 93% Recall but only 43% Precision",
+    "Baseline @ 0.50: Only 54% Recall - too low"
+  ],
+  "decision_rationale": [
+    "Real data only (no synthetic oversampling)",
+    "Highest ROI among viable options",
+    "Simplest solution with best performance",
+    "Easy to explain and maintain"
+  ]
+}
