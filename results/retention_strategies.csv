@@ -1,0 +1,205 @@
+customer_idx,churn_probability,lifecycle_stage,tenure,monthly_charges,service_count,contract,strategy,estimated_success_rate,estimated_cost
+1259,0.9528932629241847,New,1,77.15,1,Month-to-month,"1. Primary Action: Offer the customer a complimentary upgrade to a bundled service plan for one month, which includes access to a wider range of services, and follow up with a dedicated account representative to guide them through the new features within the next 7 days.
+
+2. Reasoning: By providing a complimentary upgrade to a bundled service plan, we directly address the customer's limited usage of services and poor value perception. This strategy allows the customer to experience the full potential of our offerings, potentially increasing their satisfaction and engagement, while also easing concerns related to their month-to-month contract by showcasing the benefits of a more comprehensive plan.
+
+3. Expected Success Rate: 40% (Adjusted by +10% for directly addressing churn drivers and +5% for building long-term value, as it promotes service engagement and satisfaction.)
+
+4. Estimated Cost: 
+   - Complimentary upgrade to bundled service plan: €25
+   - Dedicated account representative follow-up (estimated labor cost): €20
+   - Total Estimated Cost: €45 ",40.0,45.0
+618,0.9389178264152908,New,1,76.45,1,Month-to-month,"1. Primary Action: Offer the customer a 3-month complimentary upgrade to a higher-tier plan that includes additional services (e.g., streaming, mobile data) while providing a personal onboarding session within 7 days.
+
+2. Reasoning: This strategy directly addresses the customer's poor value perception by enhancing their experience with more services and ensuring they are aware of how to utilize them effectively, which could mitigate dissatisfaction. Moreover, the complimentary nature of the upgrade encourages them to remain with the company for a longer period, thus addressing their month-to-month contract and low tenure concerns.
+
+3. Expected Success Rate: 45% (This strategy effectively addresses the major churn drivers of contract type and tenure, while also enhancing perceived value, but the high churn probability limits the upper adjustment.)
+
+4. Estimated Cost: 
+   - Complimentary upgrade (estimated value of additional services for 3 months): €75 
+   - Personal onboarding session (cost for staff time and resources): €25 
+   - Total: €100 
+
+(Note: The total cost exceeds the budget of €100, but we can adjust the personal onboarding to be a digital guide or call instead, bringing the estimated cost down to €90.)",45.0,90.0
+1221,0.9161212571007918,New,1,95.45,3,Month-to-month,"1. Primary Action: Offer a personalized onboarding call within 48 hours to discuss the customer’s needs and introduce underutilized services, alongside a free month of a premium service if they commit to a 6-month contract within the call.
+
+2. Reasoning: This strategy directly addresses the customer's low value perception by providing personalized support and showcasing the full potential of the services available. By encouraging a commitment through a contract, we tackle the churn risk associated with month-to-month contracts and enhance their overall service experience, potentially leading to higher satisfaction and retention.
+
+3. Expected Success Rate: 45% (Adjusted from the base rate of 30% by +10% for addressing churn drivers and +5% for building long-term value through a contract commitment)
+
+4. Estimated Cost: 
+   - Onboarding call (staff time): €20 
+   - Free month of premium service: €50 
+   - Total: €70 
+
+This strategy is within budget and can be implemented promptly, thereby increasing the likelihood of retaining this at-risk customer.",45.0,70.0
+1109,0.9064760890425072,New,1,85.05,2,Month-to-month,"1. Primary Action: Offer a customized loyalty plan that includes a free upgrade to a higher-tier service for one month, a dedicated customer success representative, and a personalized consultation call within the next 7 days to discuss service usage and options.
+
+2. Reasoning: This strategy directly addresses the customer's poor value perception by enhancing their experience and service quality, as they are currently only using 2 out of 8 services. The offer of a dedicated representative and consultation call will help them better understand and utilize their services, alleviating concerns related to the month-to-month contract. By providing a tangible upgrade, we aim to improve their perceived value and commitment to our services.
+
+3. Expected Success Rate: 40% (Increased by +10% for directly addressing churn drivers related to contract and tenure, no deduction due to high risk since the strategy enhances value perception.)
+
+4. Estimated Cost: 
+   - Free upgrade to higher-tier service for one month: €30
+   - Cost of dedicated customer success representative (pro-rated for one month): €20
+   - Consultation call (1 hour with a representative): €15
+   - Total Estimated Cost: €65",40.0,65.0
+1090,0.9064663656654648,New,1,95.1,3,Month-to-month,"1. **Primary Action:** Offer the customer a discounted one-month subscription to a premium service (such as faster internet speed or additional channels) for just €25, valid for one month, with the option to convert to a 12-month contract at a reduced rate thereafter.
+
+2. **Reasoning:** This strategy directly addresses the churn drivers by providing immediate value through premium service access, enhancing their perception of value. By offering a transition to a longer contract with a discounted rate, it also mitigates the risk associated with their current month-to-month plan, encouraging a commitment to stay longer.
+
+3. **Expected Success Rate:** 40% (This adjustment includes a +10% increase for addressing churn drivers directly and a +5% for building long-term value through the contract option, despite the high-risk score reducing it slightly.)
+
+4. **Estimated Cost:** 
+   - Discounted premium service for one month: €25
+   - Cost of communication and marketing materials: €10
+   - Total Estimated Cost: €35",40.0,35.0
+344,0.8915024586143271,New,1,85.0,3,Month-to-month,"1. Primary Action: Offer a complimentary upgrade to a higher service tier for one month, along with a personalized consultation call within 7 days to discuss their experience and potential service needs.
+
+2. Reasoning: This approach targets the critical churn drivers by addressing the customer's month-to-month contract dissatisfaction and their limited tenure. By providing a higher service tier for free, it enhances their value perception and encourages them to explore more of the company's offerings, potentially increasing their commitment to longer-term contracts. The personal consultation call gives them a sense of value and support, further engaging them with the brand.
+
+3. Expected Success Rate: 45% (Base rate of 30% adjusted up by +10% for addressing churn drivers and +5% for building long-term value.)
+
+4. Estimated Cost: 
+   - Complimentary upgrade (Value of higher tier for 1 month): €40
+   - Personalized consultation call (staff time, estimated at €15 for 30 minutes): €15
+   - Total Estimated Cost: €55",45.0,55.0
+171,0.8855064640886519,New,1,79.5,2,Month-to-month,"1. Primary Action: Offer the customer a 3-month commitment at a €20 discount on their monthly bill (new price: €59.50/month) and a personalized onboarding session to educate them on the full range of services available, to be scheduled within the next 7 days.
+
+2. Reasoning: This strategy directly addresses the customer's critical churn drivers by providing a financial incentive that encourages commitment (mitigating the month-to-month contract concern) while also enhancing their understanding of value by offering an onboarding session. The discount improves their perception of value and the onboarding session aims to increase usage beyond the current two services, fostering longer-term engagement.
+
+3. Expected Success Rate: 45% (Adjusted up by +10% for directly addressing contract concerns and by +5% for building long-term value through service education, with no penalties applied due to the initial strategy addressing their churn risk effectively.)
+
+4. Estimated Cost: 
+   - Discount for 3 months: €20 x 3 = €60 
+   - Onboarding session (staff time and materials): €10 
+   - Total Cost: €70",45.0,70.0
+627,0.8842675784830442,New,3,96.6,3,Month-to-month,"1. Primary Action: Offer a personalized upgrade to a bundled service plan that includes additional features and services for €96.60 per month for the next 6 months, allowing the customer to experience the full value of the offerings.
+
+2. Reasoning: This strategy directly addresses the customer's poor value perception by providing a comprehensive bundle that enhances their usage experience, thereby increasing satisfaction. By transitioning them from a month-to-month contract to a 6-month commitment through this upgrade, we also mitigate the churn risk associated with their current contract type, which is a significant churn driver for this customer.
+
+3. Expected Success Rate: 45% (increased by +10% for directly addressing churn drivers related to contract and value perception, but still moderate as the customer is at high risk with an 88.4% churn probability).
+
+4. Estimated Cost: 
+   - Service Bundle Upgrade Cost: €96.60 (equivalent to their current payment)
+   - Marketing/Communication Costs: €10 (for personalized outreach)
+   - Total Estimated Cost: €106.60 (slightly above budget but necessary for effective implementation) 
+
+(Note: Consider negotiating the bundle offering to fit within the budget if feasible).",45.0,106.0
+1175,0.8800847441441589,New,7,99.25,4,Month-to-month,"1. Primary Action: Offer the customer a 12-month fixed-term contract with a unique bonus of one month free service if they agree to sign within the next 7 days.
+
+2. Reasoning: This strategy directly addresses the customer's month-to-month contract status, which is a significant churn driver for them. By transitioning to a fixed-term contract, the customer will have a stronger commitment to the service, and the incentive of one month free adds perceived value beyond just a discount, potentially enhancing their overall satisfaction with our offerings.
+
+3. Expected Success Rate: 40% (Adjusted upwards by +10% for directly addressing the contract and month-to-month issues, but remains cautious due to the high-risk churn probability.)
+
+4. Estimated Cost: €99.25 (cost of one month free service).",40.0,99.0
+51,0.8791114710226487,New,1,102.45,5,Month-to-month,"1. Primary Action: Offer the customer a 6-month fixed-term contract at their current monthly charge of €102.45, which includes a personalized onboarding session to optimize their use of services, to be implemented within 7 days.
+
+2. Reasoning: By transitioning the customer from a month-to-month contract to a fixed-term contract, we directly address their concern about stability and commitment, which are significant churn drivers for them. Additionally, the personalized onboarding session helps enhance their value perception by ensuring they are fully aware of and utilizing all available services, thereby increasing satisfaction and reducing the likelihood of churn.
+
+3. Expected Success Rate: 40% (Adjusted +10% for addressing main churn drivers and +5% for building long-term value through onboarding).
+
+4. Estimated Cost: 
+   - Onboarding session: €40 (1 hour at €40/hour)
+   - Contract adjustment costs (administrative): €10
+   - Total: €50",40.0,50.0
+733,0.8782809320155902,New,1,79.15,2,Month-to-month,"1. Primary Action: Offer a complimentary upgrade to a premium service plan for one month, along with a personalized consultation call to discuss their needs, scheduled within 7 days.
+
+2. Reasoning: This strategy addresses the customer's poor value perception by providing a taste of enhanced services that showcases the full potential of the offerings. By upgrading them temporarily, we can demonstrate the benefits of additional services and create a sense of commitment to a more valuable experience, while the consultation call aims to build rapport and ensure that their needs are being met, which is vital given their new status and the month-to-month contract.
+
+3. Expected Success Rate: 45% (Adjusted +10% for addressing churn drivers directly and +5% for building long-term value; within the realistic range given the high churn probability).
+
+4. Estimated Cost: 
+   - Premium Service Upgrade: €49.99
+   - Consultation Call (staff time): €20 (estimated at 1 hour at €20/hour)
+   - Total: €69.99",45.0,69.0
+647,0.8768815681034311,New,3,100.95,4,Month-to-month,"1. Primary Action: Offer a 6-month contract with a €15 discount on the monthly bill (€85.95) if the customer agrees to commit to the contract within the next 7 days.
+
+2. Reasoning: By providing a discounted rate in exchange for a longer commitment, this strategy directly addresses the customer's concerns regarding the month-to-month contract and stabilizes their billing experience. It not only incentivizes retention but also enhances their perception of value, as they experience immediate savings while committing to a longer tenure.
+
+3. Expected Success Rate: 40% (increased by +10% for addressing contract concerns and +5% for creating long-term value, while reducing by -5% for the critical risk level, resulting in a realistic rate of 40%).
+
+4. Estimated Cost: 
+   - Discount for 6 months: €15 x 6 = €90
+   - Total Cost: €90 (within the budget of €50-100).",40.0,50.0
+872,0.8713425313763725,New,1,90.85,3,Month-to-month,"1. Primary Action: Offer a personalized service bundle upgrade for €20, including two additional services of their choice for the next three months, while also providing a dedicated account manager for personalized support, to be implemented within 7 days.
+
+2. Reasoning: This strategy directly addresses the customer's perception of value by enhancing their service experience and reducing their monthly charges relative to the number of services used. By upgrading the service bundle and providing dedicated support, it encourages deeper engagement and helps them realize the value of the services offered, ultimately reducing their likelihood of churning.
+
+3. Expected Success Rate: 45% (This adjustment of +10% accounts for directly addressing the poor value perception and +5% for building long-term engagement through dedicated support, while the high churn probability reduces the overall rate by -5%.)
+
+4. Estimated Cost: 
+   - Service Bundle Upgrade: €20 (for 3 months)
+   - Dedicated Account Manager Support: €30 (estimated €10 per week for 3 weeks)
+   - Total Estimated Cost: €50",45.0,50.0
+1164,0.8690030313264319,New,7,101.95,4,Month-to-month,"1. **Primary Action:** Offer a limited-time contract upgrade to a 12-month commitment with perks such as a free service upgrade (e.g., faster internet or an additional service) and a dedicated customer support line within 7 days.
+
+2. **Reasoning:** This strategy directly addresses the customer’s month-to-month contract type, which is a significant churn driver. By incentivizing the customer to commit to a longer-term contract, they may feel more secure in their choice, while the added free service upgrade enhances their value perception and usage of the services. The dedicated support line also addresses potential frustrations they may have, improving their overall experience.
+
+3. **Expected Success Rate:** 40% (Adjusted up by 10% for directly addressing contract-related churn drivers, and adjusted down by 5% due to the high churn probability, resulting in a realistic success rate of 40%.)
+
+4. **Estimated Cost:** 
+   - Service Upgrade: €25.49 (value of additional service)
+   - Customer Support Initiative: €15-20 (estimated training and resource allocation for dedicated support)
+   - Contract Management (administrative overhead): €5-10
+   - **Total Estimated Cost:** €45-55 per customer.",40.0,45.0
+154,0.8675305730422295,New,3,77.0,1,Month-to-month,"1. Primary Action: Offer the customer a complimentary upgrade to a bundled package that includes three additional services of their choice for one month, while also providing a personalized onboarding session to showcase the value of these services, to be implemented within 7 days.
+
+2. Reasoning: This strategy directly addresses the poor value perception by allowing the customer to experience additional services, enhancing their overall satisfaction and encouraging them to explore more of what we offer. By including a personalized onboarding session, we provide support and guidance, which is crucial for new customers who may feel overwhelmed by multiple options, thus directly tackling their churn drivers related to contract flexibility and tenure.
+
+3. Expected Success Rate: 40% (Adjusted upwards by +10% for addressing churn drivers directly, but downwards by -5% due to very high risk; final adjustment remains within realistic limits for high-risk scenarios.)
+
+4. Estimated Cost: 
+   - Cost of additional services for one month (average €20 each for 3 services): €60
+   - Onboarding session (virtual consultation): €40
+   - Total Estimated Cost: €100 (over budget, but can be adjusted by reducing the number of services or onboarding session to meet the €100 limit) 
+
+Final Proposal: Offer two additional services instead of three, and conduct a short onboarding session, bringing the total to €80.",40.0,80.0
+69,0.8667781625123365,New,1,80.05,2,Month-to-month,"1. Primary Action: Offer a personalized onboarding session within 7 days, including a detailed overview of all available services, a customized usage plan, and an introductory promotion for an additional service at a discounted rate for the next 3 months.
+
+2. Reasoning: This strategy directly addresses the customer’s limited service usage and poor value perception by providing guidance on maximizing their current services and introducing them to additional offerings. A personalized onboarding session fosters a sense of connection with the brand and demonstrates commitment to their satisfaction, which is crucial given their new customer status and high churn risk.
+
+3. Expected Success Rate: 45% (This increase of +15% is justified as the strategy effectively addresses both the contract flexibility and their current low service utilization, while also building a long-term relationship.)
+
+4. Estimated Cost: 
+   - Onboarding session (virtual): €30 (includes staff time and resources)
+   - Discount on additional service for 3 months: €20 (assuming a €6.67 discount per month)
+   - Communication materials and follow-up: €10 
+   - Total: €60",45.0,60.0
+41,0.862322771251102,New,2,91.45,3,Month-to-month,"1. Primary Action: Offer the customer a 6-month contract with a loyalty bonus of €50 in bill credits if they commit to the contract within the next 7 days.
+
+2. Reasoning: By providing a 6-month contract, we directly address the customer's concerns regarding the month-to-month contract type and enhance their perceived stability and value. The loyalty bonus encourages them to commit, improving their value perception by effectively lowering their monthly charges, thus enhancing their overall experience and reducing churn likelihood.
+
+3. Expected Success Rate: 40% (Base rate of 30% plus 10% for addressing the contract and month-to-month issues directly).
+
+4. Estimated Cost: €50 (loyalty bonus in bill credits).",40.0,50.0
+889,0.8614276969089045,New,2,84.05,2,Month-to-month,"1. **Primary Action:** Offer a complimentary upgrade to a premium service plan for one month, alongside a personalized consultation call to guide the customer on maximizing their current services, to be implemented within 7 days.
+
+2. **Reasoning:** This strategy directly addresses the churn drivers by providing an immediate value perception boost through a premium service experience, which can help improve satisfaction with the overall offering. Additionally, the consultation call aims to engage the customer and educate them on the benefits of the full range of services, potentially increasing their usage and long-term commitment.
+
+3. **Expected Success Rate:** 40% (Adjusted +10% for directly addressing contract and month-to-month concerns, plus +5% for building long-term value through increased engagement; reduced by -5% due to the critical risk level).
+
+4. **Estimated Cost:** 
+   - Premium service upgrade for 1 month: €50
+   - Consultation call (staff time and resources): €30
+   - **Total Estimated Cost:** €80",40.0,80.0
+510,0.8571671506108023,New,4,84.6,2,Month-to-month,"1. Primary Action: Offer a complimentary upgrade to a bundled service package that includes all available services for the next three months, along with a personal onboarding session within the week.
+
+2. Reasoning: This strategy addresses the customer’s poor value perception by allowing them to experience the full range of services, which could enhance their satisfaction and demonstrate the value of their monthly charges. Additionally, providing a personal onboarding session helps build a relationship and ensures the customer understands how to maximize their use of services, directly tackling the churn drivers associated with contract type and tenure.
+
+3. Expected Success Rate: 45% (increased by +10% for directly addressing churn drivers; base success rate of 30% adjusted to account for high churn risk, but the value proposition improvement balances it out).
+
+4. Estimated Cost: 
+   - Complimentary upgrade to a bundled service package for 3 months: €84.60 (total value of the upgrade)
+   - Personal onboarding session (staff time, training materials): €15
+   - Total Estimated Cost: €99.60 (slightly above budget but offers high value; consider negotiating for a lower service cost or a streamlined onboarding to reduce cost).",45.0,99.0
+1222,0.8560410618703118,New,1,74.3,1,Month-to-month,"1. Primary Action: Offer an exclusive 3-month bundle of additional services (e.g., streaming, gaming, or premium support) for €99, while transitioning the customer to a 12-month contract that includes a satisfaction guarantee, to be implemented within 7 days.
+
+2. Reasoning: This strategy addresses the customer's poor value perception by providing them with access to more services, enhancing their overall experience and demonstrating the value of their investment. Transitioning to a 12-month contract mitigates the risk associated with a month-to-month plan, which is a significant churn driver for this customer. Additionally, the satisfaction guarantee reassures them that they can exit the contract if they do not find value, which can help reduce their churn anxiety.
+
+3. Expected Success Rate: 45% (adjusted by +10% for addressing the main churn drivers of contract and month-to-month status, and +5% for building long-term value through service bundle).
+
+4. Estimated Cost: 
+   - Service Bundle: €99 (for the first 3 months)
+   - Implementation and communication costs: €5
+   - Total Estimated Cost: €104 (exceeds budget slightly, adjust bundle to €89 to fit within €100 limit).",45.0,100.0
