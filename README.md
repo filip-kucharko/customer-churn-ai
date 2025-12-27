@@ -6,7 +6,35 @@
 [![ML](https://img.shields.io/badge/ML-Gradient_Boosting-green.svg)]()
 [![GenAI](https://img.shields.io/badge/GenAI-GPT--4-orange.svg)]()
 
-![Project Banner](docs/images/project_banner.png) <!-- Optional: Screenshot vom Dashboard später -->
+## Dashboard Preview
+
+### Customer Risk Analysis
+
+Real-time churn probability assessment with individual customer profiles and key risk drivers.
+
+![Customer Risk Analysis Dashboard](docs\images\CRA_Screenshot.png)
+
+**Features shown:**
+
+- Churn risk gauge (0-100% probability)
+- Customer lifecycle segmentation
+- Prediction validation (model vs. actual outcome)
+- Top risk driver analysis
+
+---
+
+### AI-Powered Strategy Generator
+
+GPT-4 generates personalized retention strategies based on customer risk profile and ML insights.
+
+![Strategy Generator Dashboard](docs\images\Strategy_Generator_ScreenShot.png)
+
+**Features shown:**
+
+- Customer profile summary
+- AI-generated retention strategy with cost breakdown
+- Data-driven success rate estimation
+- Exportable strategy reports
 
 ---
 
@@ -39,8 +67,8 @@ Customer churn costs telecom companies millions annually:
 
 ### 1. **ML-Powered Churn Prediction**
 
-- **Model:** Gradient Boosting with optimized threshold (0.35)
-- **Performance:** 69.5% Recall, 55.1% Precision, 634% ROI
+- **Model:** Gradient Boosting with optimized threshold (0.45)
+- **Performance:** 58% Recall, 64% Precision, 753% ROI
 - **Innovation:** Business-driven threshold optimization (not just accuracy maximization)
 
 ### 2. **Business-Driven Feature Engineering**
@@ -70,12 +98,13 @@ Customer churn costs telecom companies millions annually:
 
 ### **Model Performance**
 
-| Metric    | Value |
-| --------- | ----- |
-| Recall    | 69.5% |
-| Precision | 55.1% |
-| F2-Score  | 0.661 |
-| ROI       | 634%  |
+| Metric             | Value |
+| ------------------ | ----- |
+| Recall             | 58%   |
+| Precision          | 64%   |
+| F2-Score           | 0.598 |
+| ROI                | 753%  |
+| Decision Threshold | 0.45  |
 
 ### **Strategy Generation**
 
@@ -211,7 +240,7 @@ print(strategy)
 ### **Key Decisions**
 
 1. **No SMOTE in final model** - Simpler solution achieved same performance
-2. **Threshold = 0.35** - Optimized for business metrics, not defaults
+2. **Threshold = 0.45** - Optimized for business metrics, not defaults
 3. **Keep lifecycle_stage despite low ML importance** - Needed for GenAI prompts
 4. **Data-driven success rates** - Realistic estimates over AI hallucination
 
@@ -238,11 +267,3 @@ print(strategy)
 
 - Dataset: [Telco Customer Churn - IBM Sample Data](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 - Inspiration: Real-world consulting challenges in customer retention
-
-```
-DEALER:     [10♠] [??]  → Punkte: 10
-SPIELER:    [7♥] [K♣]   → Punkte: 17
-
-[H] Hit | [S] Stand | [Q] Quit
-Ihre Wahl: _
-```
