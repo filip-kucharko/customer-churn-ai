@@ -1,0 +1,421 @@
+/* === ROOT VARIABLES === */
+:root {
+  --primary-bg: #0a0e27;
+  --secondary-bg: #131729;
+  --sidebar-bg: #0d1117;
+  --card-bg: #1a1f3a;
+  --card-border: #2d3454;
+  --accent-primary: #4a9eff;
+  --accent-secondary: #00d4aa;
+  --accent-warning: #ff9f43;
+  --accent-danger: #ff6b6b;
+  --text-primary: #e4e6eb;
+  --text-secondary: #b0b3c1;
+  --text-muted: #6b7280;
+  --border-subtle: #2d3454;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* === MAIN BACKGROUND === */
+.stApp {
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+}
+
+/* === SIDEBAR === */
+[data-testid="stSidebar"] {
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--border-subtle);
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] {
+  color: var(--text-primary);
+}
+
+/* === HEADERS === */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.25rem !important;
+  margin-bottom: 1.5rem !important;
+  border-bottom: 2px solid var(--accent-primary);
+  padding-bottom: 0.75rem;
+}
+
+h2 {
+  font-size: 1.75rem !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  color: var(--accent-secondary) !important;
+}
+
+h3 {
+  font-size: 1.25rem !important;
+  margin-bottom: 0.75rem !important;
+  color: var(--text-secondary) !important;
+}
+
+/* === METRIC CARDS (KPI BOXES) === */
+[data-testid="stMetric"] {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-testid="stMetric"]:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-primary);
+}
+
+[data-testid="stMetric"] label {
+  color: var(--text-secondary) !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+[data-testid="stMetric"] [data-testid="stMetricValue"] {
+  color: var(--text-primary) !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+}
+
+[data-testid="stMetric"] [data-testid="stMetricDelta"] {
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+}
+
+/* === BUTTONS === */
+.stButton > button {
+  background-color: var(--accent-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.625rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+.stButton > button:hover {
+  background-color: #3a8eef;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.stButton > button:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Secondary button variant (add custom class in Streamlit) */
+.stButton.secondary > button {
+  background-color: transparent;
+  border: 1.5px solid var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.stButton.secondary > button:hover {
+  background-color: rgba(74, 158, 255, 0.1);
+}
+
+/* === INPUT FIELDS & DROPDOWNS === */
+.stTextInput > div > div > input,
+.stSelectbox > div > div > select,
+.stNumberInput > div > div > input,
+.stTextArea > div > div > textarea {
+  background-color: var(--secondary-bg) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 6px !important;
+  color: var(--text-primary) !important;
+  padding: 0.625rem !important;
+  font-size: 0.95rem !important;
+}
+
+.stTextInput > div > div > input:focus,
+.stSelectbox > div > div > select:focus,
+.stNumberInput > div > div > input:focus,
+.stTextArea > div > div > textarea:focus {
+  border-color: var(--accent-primary) !important;
+  box-shadow: 0 0 0 2px rgba(74, 158, 255, 0.2) !important;
+  outline: none !important;
+}
+
+/* Dropdown specific */
+[data-baseweb="select"] {
+  background-color: var(--secondary-bg);
+  border-radius: 6px;
+}
+
+[data-baseweb="select"] > div {
+  background-color: var(--secondary-bg) !important;
+  border-color: var(--border-subtle) !important;
+}
+
+/* === DATA TABLES === */
+.dataframe {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--card-border) !important;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.dataframe thead tr th {
+  background-color: var(--secondary-bg) !important;
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1rem !important;
+  border-bottom: 2px solid var(--accent-primary) !important;
+}
+
+.dataframe tbody tr td {
+  background-color: var(--card-bg) !important;
+  color: var(--text-secondary) !important;
+  padding: 0.875rem 1rem !important;
+  border-bottom: 1px solid var(--border-subtle) !important;
+  font-size: 0.9rem;
+}
+
+.dataframe tbody tr:hover td {
+  background-color: rgba(74, 158, 255, 0.05) !important;
+}
+
+.dataframe tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+/* === MESSAGE BOXES === */
+/* Info Box */
+.stAlert[data-baseweb="notification"] {
+  background-color: rgba(74, 158, 255, 0.1);
+  border-left: 4px solid var(--accent-primary);
+  border-radius: 6px;
+  padding: 1rem;
+  color: var(--text-primary);
+}
+
+/* Success Box */
+[data-testid="stSuccess"] {
+  background-color: rgba(0, 212, 170, 0.1) !important;
+  border-left: 4px solid var(--accent-secondary) !important;
+  border-radius: 6px !important;
+  color: var(--text-primary) !important;
+}
+
+/* Warning Box */
+[data-testid="stWarning"] {
+  background-color: rgba(255, 159, 67, 0.1) !important;
+  border-left: 4px solid var(--accent-warning) !important;
+  border-radius: 6px !important;
+  color: var(--text-primary) !important;
+}
+
+/* Error Box */
+[data-testid="stError"] {
+  background-color: rgba(255, 107, 107, 0.1) !important;
+  border-left: 4px solid var(--accent-danger) !important;
+  border-radius: 6px !important;
+  color: var(--text-primary) !important;
+}
+
+/* === CONTAINERS & CARDS === */
+.element-container {
+  margin-bottom: 1rem;
+}
+
+/* Custom card class (use st.container()) */
+[data-testid="stVerticalBlock"] > [data-testid="stVerticalBlock"] {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+/* === EXPANDER === */
+.streamlit-expanderHeader {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--card-border) !important;
+  border-radius: 6px !important;
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+}
+
+.streamlit-expanderHeader:hover {
+  background-color: var(--secondary-bg) !important;
+  border-color: var(--accent-primary) !important;
+}
+
+.streamlit-expanderContent {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--card-border) !important;
+  border-top: none !important;
+  color: var(--text-secondary) !important;
+}
+
+/* === TABS === */
+.stTabs [data-baseweb="tab-list"] {
+  gap: 0.5rem;
+  background-color: var(--secondary-bg);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+  background-color: transparent;
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  padding: 0.625rem 1.25rem;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+  background-color: rgba(74, 158, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.stTabs [aria-selected="true"] {
+  background-color: var(--accent-primary) !important;
+  color: white !important;
+}
+
+/* === PROGRESS BAR === */
+.stProgress > div > div > div {
+  background-color: var(--accent-primary);
+}
+
+/* === SLIDER === */
+.stSlider > div > div > div {
+  background-color: var(--accent-primary) !important;
+}
+
+/* === SPINNER === */
+.stSpinner > div {
+  border-top-color: var(--accent-primary) !important;
+}
+
+/* === SCROLLBAR === */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+/* === PLOTLY CHART CONTAINERS === */
+.js-plotly-plot {
+  background-color: transparent !important;
+}
+
+/* === UTILITY CLASSES === */
+.text-muted {
+  color: var(--text-muted) !important;
+  font-size: 0.875rem;
+}
+
+.text-primary {
+  color: var(--accent-primary) !important;
+}
+
+.text-success {
+  color: var(--accent-secondary) !important;
+}
+
+.text-warning {
+  color: var(--accent-warning) !important;
+}
+
+.text-danger {
+  color: var(--accent-danger) !important;
+}
+
+/* === DIVIDER === */
+hr {
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  margin: 2rem 0;
+}
+
+/* === FOOTER / CAPTION === */
+.caption,
+small {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+/* === LOADING STATE === */
+.stPlotlyChart {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* === CUSTOM SECTION STYLING === */
+.stSubheader {
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* === METRIC IMPROVEMENTS === */
+[data-testid="stMetricLabel"] {
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+/* === SPACING IMPROVEMENTS === */
+.element-container {
+  margin-bottom: 0.5rem !important;
+}
+
+div[data-testid="column"] {
+  padding: 0.5rem !important;
+}
+
+/* === EXPANDER STYLING === */
+.streamlit-expanderHeader {
+  font-weight: 500 !important;
+  font-size: 0.95rem !important;
+}
+
+/* === REMOVE UNDEFINED TEXT === */
+.stPlotlyChart > div > div > div > svg > g.infolayer > g > text {
+  display: none !important;
+}
