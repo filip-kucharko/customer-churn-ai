@@ -186,8 +186,8 @@ high_risk_count = (predictions >= 0.6).sum()
 
 st.sidebar.metric("Total Customers", f"{total_customers:,}")
 st.sidebar.metric("High Risk (≥60%)", f"{high_risk_count:,}")
-st.sidebar.metric("Model Recall", "69.5%")
-st.sidebar.metric("Campaign ROI", "634%")
+st.sidebar.metric("Model Recall", "58%")
+st.sidebar.metric("Campaign ROI", "753%")
 
 # Helper Function for Charts
 def create_gauge_chart(value, title):
@@ -238,11 +238,11 @@ if page == "Executive Dashboard":
     col1, col2, col3, col4 = st.columns(4)
     
     with col1:
-        st.metric("Recall", "69.5%", "7 of 10 churners")
+        st.metric("Recall", "58%", "Find 6 of 10 churners")
     with col2:
-        st.metric("Precision", "55.1%", "55% accuracy")
+        st.metric("Precision", "64%", "64% accuracy")
     with col3:
-        st.metric("ROI", "634%", "6.3x return")
+        st.metric("ROI", "753%", "7.5x return")
     with col4:
         st.metric("Avg Cost", "€68", "per strategy")
     
@@ -256,8 +256,8 @@ if page == "Executive Dashboard":
     with col1:
         st.markdown("""
         **Predictive Analytics**
-        - Gradient Boosting (69.5% recall)
-        - Optimized threshold (0.35)
+        - Gradient Boosting (58% recall)
+        - Optimized threshold (0.45)
         - Feature importance analysis
         
         **Feature Engineering**
@@ -396,7 +396,7 @@ elif page == "Customer Risk Analysis":
         st.markdown("### Validation")
         
         # Calculate
-        pred_label = "Churn" if churn_prob >= 0.35 else "Retain"
+        pred_label = "Churn" if churn_prob >= 0.45 else "Retain"
         actual_label = "Churned" if actual_churn == 1 else "Retained"
         is_correct = pred_label.lower() == actual_label.lower()[:len(pred_label)]
         

@@ -1,13 +1,13 @@
 {
   "model_type": "Gradient Boosting",
   "smote_used": false,
-  "threshold": 0.35,
+  "threshold": 0.45,
   "reasoning": "Best balance between Recall and Precision without synthetic data",
   "performance": {
-    "recall": 0.695,
-    "precision": 0.551,
+    "recall": 0.58,
+    "precision": 0.64,
     "f2_score": 0.661,
-    "roi": 634.46,
+    "roi": 753,
     "accuracy": 0.781
   },
   "business_impact": {
